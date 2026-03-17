@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Search</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen p-10">
+
+<h1 class="text-3xl font-bold mb-6 text-center">Movie Search</h1>
+
+<div class="flex gap-3 justify-center mb-6">
+    <input id="title" placeholder="Movie title"
+    class="border p-2 rounded w-48">
+
+    <input id="year" placeholder="Year"
+    class="border p-2 rounded w-32">
+
+    <input id="page" placeholder="Page"
+    class="border p-2 rounded w-24">
+
+    <button onclick="searchMovie()"
+    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+    Search
+    </button>
+</div>
+
+<!-- Movie Results -->
+<div id="results"
+class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
